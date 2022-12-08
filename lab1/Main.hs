@@ -9,7 +9,7 @@ qERoots a b c | a == 0       = error "NOT QE"
                     
 showRoots :: (Bool, Double, Double) -> String
 showRoots (False, _, _) = "NOT ROOT OF QE"
-showRoots (True, x1, x2) = if x1 == x2 then show x1 else show x1 ++ " " ++ show x2
+showRoots (True, x1, x2) = show x1 ++ " " ++ show x2
 
 main = do
     a <- getLine
