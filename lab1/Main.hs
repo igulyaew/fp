@@ -1,3 +1,5 @@
+module Main where
+
 qERoots :: Double -> Double -> Double -> (Bool, Double, Double)
 qERoots a b c | a == 0       = error "NOT QE"
               | otherwise    = if d < 0 then (False, 0, 0) else (True, x1, x2) where 
